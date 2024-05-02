@@ -23,7 +23,7 @@ def file_compare(file1, file2):
 
 def test(flag, test_file):
     system("cat -{fl} {file} > cat_out.txt".format(fl=flag, file=test_file))
-    system("./s21_cat -{fl} {file} > out.txt".format(fl=flag, file=test_file))
+    system("./my_cat -{fl} {file} > out.txt".format(fl=flag, file=test_file))
 
     if file_compare("cat_out.txt", "out.txt"):
         return 1
