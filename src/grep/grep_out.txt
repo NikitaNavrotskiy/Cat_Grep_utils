@@ -1,0 +1,11 @@
+opt_t opt_get(int argc, char **argv);
+void grep(char *filename, char *pattern, opt_t args);
+void print_matches(regex_t regex, FILE *file, opt_t args, char *filename, FILE *file_f);
+int check_file(char *filename);
+int grep_flag_o(regex_t *regex, char *line, opt_t args, int n_line, int *count,
+          char *filename);
+void print_o_flag(opt_t args, char *line, int print, char *filename,
+int grep_flag_f(opt_t args, char *line, FILE *file_f, int n_line, int *count,
+          char *filename, regex_t regex);
+int Getline(char **line_ptr, size_t *n, FILE *stream);
+void pre_main(int argc, char**argv);

@@ -1,0 +1,12 @@
+
+
+with "-" (and not be    ing "-" or "--") is considered an option. The characters in this element (not 
+counting the leading "-") are option characters. Each time getopt() is called again , the characte
+rs of the next option are returned.
+
+
+
+    If getopt() finds an option character, it returns that character, updating the external variable opt
+ind and the static variable nextchar so that the next call to getopt() can continue testing from the
+next option character or argv element .
+

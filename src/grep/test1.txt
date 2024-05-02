@@ -1,0 +1,28 @@
+#ifndef GREP_H
+#define GREP_H
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
+#include <getopt.h>
+#include <regex.h>
+
+
+typedef struct opt{
+  bool flag_e;
+  char *arg_e;
+  bool flag_i;
+  bool flag_v;
+  bool flag_c;
+  bool flag_l;
+  bool flag_n;
+  bool flag_h;
+  bool flag_s;
+  bool flag_f;
+  char *arg_f;
+  bool flag_o;
+}opt_t;
+
+
